@@ -6,6 +6,8 @@ const Home = () => {
     const initialCoffees = useLoaderData();
     const [coffees, setCoffees] = useState(initialCoffees);
 
+    // Array.isArray(coffees) ? coffees : [coffees];
+
     return (
         <div>
             <h1 className='text-xl font-bold my-4'>Total Coffes Variety : {coffees.length}</h1>
